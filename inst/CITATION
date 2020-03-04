@@ -1,0 +1,29 @@
+year <- sub("-.*", "", meta["Date"])
+
+note <- sprintf("R package version %s", meta["Version"]) 
+
+bibentry(bibtype = "Manual",          
+         title = "{DistributionFitR}: Fitting Multiple Distributions",
+         author = c(person("Benedikt", "Geier", role="aut"),  
+                    person("Moritz", "Kern", role="aut"),  
+                    person(given=c("Borui","Niklas"), "Zhu", role=c("aut", "cre")), 
+                    person("Kiril", "Dik", role="aut"),
+                    person("Andre", "Ferdinand", role="aut"), # keine Sonderzeichen !!                    
+                    person("Till", "Freihaut", role="aut"), 
+                    person("Tim", "Glockner", role="aut"),   
+                    person(given=c("Manuel","J."), "Hentschel", role="aut"),
+                    person("Adrian", "Heppeler", role="aut"),     
+                    person("Moritz", "Lauff", role="aut"),                       
+                    person("Niclas", "Lietzow", role="aut"),                     
+                    person("Helene", "Peter", role="aut"),
+                    person("Nadine", "Tampe", role="aut"),                     
+                    person(given=c("Valentin","v."), "Trotha", role="aut"),
+                    person("Leonardo", "Vela", role="aut"),
+                    person("Martin", "Schlather", role=c("aut", "cre")),  
+                    person("Yiqi", "Li", role="ctb"),
+                    person("Henrik", "Bengtsson", role="ctb")),
+        year = year,          
+        note = note,          
+        url = "https://github.com/YCartes/DistributionFitr/tree/master" 
+#        url = "https://CRAN.R-project.org/package=DistributionFitR"
+        )

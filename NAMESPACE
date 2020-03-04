@@ -1,0 +1,13 @@
+import(utils)
+import(stats)
+import(stringr)
+import(datasets)
+import(graphics)
+import(grDevices)
+import(methods)
+import(parallel)
+import(doParallel)
+import(foreach)
+
+export(globalfit, getFamilies, getFamily, getParams, install.packages_DistributionFitR)
+exportMethods(summary, hist, sort, AIC, BIC)
